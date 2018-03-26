@@ -26,7 +26,7 @@ app.use(cors());
 
 
 // routes
-app.get("/", (req, res) => { res.send(database.users) });
+app.get("/", (req, res) => { res.send('it is working') });
 // - signin route
 app.post("/signin", (req, res) => { signin.handleSignin(req, res, db, bcrypt) });
 // - register route
